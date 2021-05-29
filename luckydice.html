@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Lucky Dice Casino Game </title>
+  <link rel="stylesheet" href="lucky.css">
+</head>
+
+
+<body>
+
+  <div class="picture-title">
+  </div>
+
+  <div class="info-component">
+    <h3>Nhập thông tin của bạn</h3>
+    <div>
+      <div class="label">
+        <label>Username</label>
+      </div>
+      <div class="input">
+        <input type="text" id="username" placeholder="Nhập username.." required>
+      </div>
+    </div>
+    <div>
+      <div class="label">
+        <label>Firstname</label>
+      </div>
+      <div class="input">
+        <input type="text" id="firstname" placeholder="Nhập firstname.." required>
+      </div>
+    </div>
+    <div>
+      <div class="label">
+        <label>Lastname</label>
+      </div>
+      <div class="input">
+        <input type="text" id="lastname" placeholder="Nhập lastname.." required>
+      </div>
+    </div>
+  </div>
+
+  <div class="dice-component">
+    <input class="btn btn-green" type="button" id="buttonDice" onclick="onClickButtonDice()" value="Ném">
+    <div>
+      <img id="diceRound" src="images/dice.png" alt="">
+    </div>
+    <div id="result-text">Chúc mừng</div>
+  </div>
+
+  <div class="result-component">
+    <div id="voucher-result">
+      <p>Voucher:</p>
+      <p>ID2210</p>
+      <p>20%</p>
+      <hr>
+    </div>
+    <div id="prize-result">
+      <img id="prizeimage" src="images/xe-may.jpg" width="100%" />
+    </div>
+  </div>
+
+  <div class="history-btn-component">
+    <div class="history-btn">
+      <input class="btn btn-blue"  type="button" id="diceHistoryButton" onclick="onClickDiceHistory()" value="Dice History">
+    </div>
+    <div class="history-btn">
+      <input class="btn btn-blue" type="button" id="voucherHistoryButton" onclick="onClickVoucherHistory()" value="Voucher History">
+    </div>
+    <div class="history-btn">
+      <input class="btn btn-blue" type="button" id="presentHistoryButton" onclick="onClickPresentHistory()" value="Present History">
+    </div>
+  </div>
+  <div id="history-component" class="history-component">
+    <table id="hisory-placeholder-table">
+      <tr>
+        <th>Lượt</th>
+        <th>Dice</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="lucky.js"></script>
+
+</body>
+
+</html>
